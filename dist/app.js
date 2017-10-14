@@ -207,7 +207,7 @@ var domString = function(dinosaur){
 	    	dinosaur.snacks.forEach((cat)=> {
 	    		newMsg += `<div class='card'>`;
 	    		newMsg += `<h5>${cat.name}</h5>`;
-	    		newMsg += `<div class='card-image'>`;
+	    		newMsg += `<div class='card-img'>`;
 	    		newMsg += `<img src='${cat.imageUrl}'>`;
 	    		newMsg += `</div>`;
 	    		newMsg += `<p class='card-description'>${cat.specialSkill}</p>`;
