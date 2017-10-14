@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'truncate';
 
 .card {
 	transition: box-shadow 3s;
@@ -7,6 +8,11 @@
 	box-shadow: $box-shadow;
 	border: 2px solid gold;
 	background-color: $neutral-color;
+
+	.card-description {
+		@include truncate(40px);
+
+	}
 
 	.card-img {
 		position: relative;
@@ -21,12 +27,7 @@
 			bottom: 0;
 			width: 100%;
 
-
 		}
-
-
-
-
 
 	}
 }
